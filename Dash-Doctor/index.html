@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dash Doctor</title>
+</head>
+<body>
+    
+    <div class="d-flex" id="wrapper">
+        <!-- Start Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class="fas fa-user-secret me-2"></i> ElShenawy
+            </div>
+
+            <div class="list-group list-group-flush my-3">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active">
+                    <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-project-diagram me-2"></i> Project
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-chart-line me-2"></i> Analytics
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-paperclip me-2"></i> Reports
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-shopping-cart me-2"></i> Store Mng
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-gift me-2"></i> Products
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-comment-dots me-2"></i> Chat
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-map-marker-alt me-2"></i> Outlet
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold">
+                    <i class="fas fa-project-diagram me-2"></i> Logout
+                </a>
+            </div>
+
+        </div>
+        <!-- End Sidebar -->
+
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <img src="images/logo.webp" alt="" class="img-logo">
+                    <!--<h2 class="fs-2 m-0">Dashboard</h2>-->
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4">
+                <div class="row g-3 my-2">
+
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3 card">
+                        <div class="p-3 d-flex justify-content-around align-item-center rounded">
+                            <div class="text-center">
+                                <i class="fas fa-clock fs-1 primary-text border rounded-full second-bg p-3"></i>
+                                <h3 class="fs-2 p-3 primary-text">25</h3>
+                                <p class="fs-5 fw-bold">Current Appointments</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 card">
+                        <div class="p-3 d-flex justify-content-around align-item-center rounded">
+                            <div class="text-center">
+                                <i class="fas fa-users fs-1 primary-text border rounded-full second-bg p-3"></i>
+                                <h3 class="fs-2 p-3 primary-text">9624</h3>
+                                <p class="fs-5 fw-bold">Follow-up Patients</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Start Latest Appointments -->
+                <div class="row my-5 section-bg p-3">
+                    <h4 class="fs-4 md-3 primary-text fw-bold">Latest Appointments</h4>
+                    <div class="col">
+                        <table class="table bg-white rounded shadow-sm table-hover">
+                            <thead class="primary-bg">
+                                <tr class="text-white">
+                                    <th scope="col">Patient</th>
+                                    <th scope="col">Day</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody-bg">
+                                <tr>
+                                    <th>Mohamed</th>
+                                    <td>Saturday</td>
+                                    <td>1/10/2023</td>
+                                    <td>In Progress</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Mohamed</th>
+                                    <td>Saturday</td>
+                                    <td>1/10/2023</td>
+                                    <td>In Progress</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Mohamed</th>
+                                    <td>Saturday</td>
+                                    <td>1/10/2023</td>
+                                    <td>In Progress</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Mohamed</th>
+                                    <td>Saturday</td>
+                                    <td>1/10/2023</td>
+                                    <td>In Progress</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="view-all">View All</button>
+                    </div>
+                </div>
+                <!-- End Latest Appointments -->
+
+                <!-- Start Patients -->
+                <div class="row my-5 section-bg p-3">
+                    <h4 class="fs-4 md-3 primary-text fw-bold">Patients</h4>
+                    <div class="col">
+                        <table class="table bg-white rounded shadow-sm table-hover">
+                            <thead class="primary-bg">
+                                <tr class="text-white">
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Age</th>
+                                    <th scope="col">City</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody-bg">
+                                <tr>
+                                    <th>Mohamed</th>
+                                    <td>25</td>
+                                    <td>Cairo</td>
+                                    <td>0123456789</td>
+                                    <td>mm@email.com</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Mohamed</th>
+                                    <td>25</td>
+                                    <td>Cairo</td>
+                                    <td>0123456789</td>
+                                    <td>mm@email.com</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Mohamed</th>
+                                    <td>25</td>
+                                    <td>Cairo</td>
+                                    <td>0123456789</td>
+                                    <td>mm@email.com</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Mohamed</th>
+                                    <td>25</td>
+                                    <td>Cairo</td>
+                                    <td>0123456789</td>
+                                    <td>mm@email.com</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="view-all">View All</button>
+                    </div>
+                </div>
+                <!-- End Patients -->
+
+                <!-- Start Schedule -->
+                <div class="row my-5 section-bg p-3">
+                    <h4 class="fs-4 md-3 primary-text fw-bold">Schedule</h4>
+                    <div class="col">
+                        <table class="table bg-white rounded shadow-sm table-hover">
+                            <thead class="primary-bg">
+                                <tr class="text-white">
+                                    <th scope="col">Day</th>
+                                    <th scope="col">From</th>
+                                    <th scope="col">To</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody-bg">
+                                <tr>
+                                    <th>Saturday</th>
+                                    <td>5 PM</td>
+                                    <td>6 PM</td>
+                                    <td>Status</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Saturday</th>
+                                    <td>5 PM</td>
+                                    <td>6 PM</td>
+                                    <td>Status</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Saturday</th>
+                                    <td>5 PM</td>
+                                    <td>6 PM</td>
+                                    <td>Status</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Saturday</th>
+                                    <td>5 PM</td>
+                                    <td>6 PM</td>
+                                    <td>Status</td>
+                                    <td><button class="view">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="view-all">View All</button>
+                    </div>
+                </div>
+                <!-- End Schedule -->
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
