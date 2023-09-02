@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.s009 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form {
+    width: 100%;
+    max-width: 790px;
+    margin: 0;
+}
+.group-select {
+    background-color: white;
+}
+.basic-search {
+    border-bottom: 2px solid #F39C79;
+}
+.basic-search .input-group input {
+    border: 0;
+    height: 70px;
+    padding: 10px 80px 10px 40px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .15);
+}
+.advance-search {
+    padding: 40px;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .15);
+}
+
+.advance-search select {
+
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.advance-search select option:focus {
+    outline: none;
+}
+
+.advance-search .group .form-select {
+    border: none;
+    border: 1px solid rgba(0,0,0,.1);
+    color: #666666;
+}
+.advance-search .group .form-select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-search {
+    background-color: transparent;
+    border: 1px solid #F39C79;
+    color: #F39C79;
+    font-weight: 400;
+    font-size: 20px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.btn-search:hover {
+    background-color: #F39C79;
+    color: white;
+}
+.btn-delete {
+    color: #666666;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.btn-delete:hover {
+    color: black;
+}
